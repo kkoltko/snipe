@@ -90,9 +90,9 @@ let czulosc = 0
 let bX = 0
 let aX = 0
 let speed = 0
-aX = 1
-bX = 3
-czulosc = 300
+aX = 0
+bX = 4
+czulosc = 200
 speed = 500
 snipe = 5
 onStart()
