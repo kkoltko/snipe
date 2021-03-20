@@ -62,12 +62,12 @@ function checkRight () {
 }
 input.onButtonPressed(Button.B, function () {
     if (x1 == 2 && y1 == 2) {
-        if (broj == 0) {
+        if (ileKaczek == 0) {
             basic.showNumber(time / 20)
             basic.pause(2000)
         } else {
-            broj += -1
-            basic.showNumber(broj)
+            ileKaczek += -1
+            basic.showNumber(ileKaczek)
             onStart()
             basic.clearScreen()
         }
@@ -84,7 +84,7 @@ let x1 = 0
 let y = 0
 let x = 0
 let y1 = 0
-let broj = 0
+let ileKaczek = 0
 let snipe = 0
 let czulosc = 0
 let bX = 0
@@ -96,7 +96,7 @@ czulosc = 300
 speed = 500
 snipe = 5
 onStart()
-broj = 5
+ileKaczek = 5
 basic.forever(function () {
     if (checkUp() || checkDown() || checkLeft() || checkRight()) {
         rysujPunkt()
